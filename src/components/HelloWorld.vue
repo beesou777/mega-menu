@@ -39,7 +39,7 @@
         <p class="logo">logo</p>
       </div>
       <div class="all-rugs my-3">
-        <div class="d-flex justify-content-between" @click="setActiveLink('all_rugs')">
+        <div class="d-flex justify-content-between" @click="all_rugs = !all_rugs">
           <p class="text mb-0">All Rugs</p>
           <svg
             width="20"
@@ -62,7 +62,7 @@
         <all-rugs  v-if="all_rugs" />
       </div>
       <div class="modern-rugs my-3">
-        <div class="d-flex justify-content-between" @click="modern_rug = !modern_rug">
+        <div class="d-flex justify-content-between" @click="modern_rugs = !modern_rugs">
           <p class="text mb-0">Modern Rugs</p>
           <svg
             width="20"
@@ -82,7 +82,7 @@
             </g>
           </svg>
         </div>
-        <modern-rugs v-if="modern_rug" />
+        <modern-rugs v-if="modern_rugs" />
       </div>
       <div class="Oriental-rugs my-3">
         <div class="d-flex justify-content-between">
@@ -144,7 +144,7 @@ export default {
   data() {
     return {
       all_rugs: false,
-      modern_rug: false,
+      modern_rugs: false,
       living_rugs: false,
       oriental_rugs:false,
       sales: false,
@@ -159,12 +159,12 @@ export default {
     OrientalRugs
   },
   methods: {
-    setActiveLink() {
-      this.all_rugs = !this.all_rugs;
-      this.modern_rug = !this.modern_rug;
-      this.oriental_rugs = this.oriental_rugs
-      this.living_rugs = this.living_rugs
-      this.sales = this.sales
+    setActiveLink(link) {
+      this.all_rugs = link === "all_rugs";
+      this.modern_rugs = link === "modern_rugs";
+      this.oriental_rugs = link === "oriental_rugs";
+      this.living_rugs = link === "living_rugs";
+      this.sales = link === "sales";
     },
   },
 };
