@@ -130,6 +130,20 @@
         </div>
         <living-rugs v-if="living_rugs"/>
       </div>
+      <div class="shopping-guide my-3">
+        <a href="/shoppig-guide">
+        Shopping Guide</a>
+      </div>
+      <div class="Blogs my-3">
+        <a href="/blogs">
+        Blogs</a>
+      </div>
+      <div class="sale my-3">
+       <a href="/sale"> sale</a>
+      </div>
+      <div class="help-contact my-3">
+       <a href="/help"> Help And Contact</a>
+      </div>
 
     </div>
   </div>
