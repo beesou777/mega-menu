@@ -1,0 +1,202 @@
+.h1 {
+  font-family: "Lato", serif;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-family: "Lato", serif;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 2rem;
+
+  @media (max-width: 568px) {
+    font-size: 1.8rem;
+  }
+}
+
+.h2,
+h2 {
+  font-family: "Lato", serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  @media (max-width: 568px) {
+    font-size: 1.6rem;
+  }
+}
+
+.h3,
+h3 {
+  font-family: "Lato", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @media (max-width: 568px) {
+    font-size: 1.3rem;
+  }
+}
+
+.h4,
+h4 {
+  font-family: "Lato", serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  @media (max-width: 568px) {
+    font-size: 1.1rem;
+  }
+}
+
+.h5,
+h5 {
+  font-family: "Lato", serif;
+  font-size: 1rem;
+  font-weight: bold;
+
+  @media (max-width: 568px) {
+    font-size: 0.9rem;
+  }
+}
+
+.h6,
+h6 {
+  font-family: "Lato", serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  @media (max-width: 568px) {
+    font-size: 0.8rem;
+  }
+}
+
+.hr {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.head-1 {
+  font-family: "Lato";
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+.head-2 {
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 2.4rem;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.head-3 {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 2.4rem;
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.head-4 {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem !important;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.head-5 {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.body-1 {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.body-sb {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 600;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.body-2 {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.small {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+}
+
+.font-family-body {
+  font-family: "Lato", serif;
+}
+
+.font-family-heading {
+  font-family: "Lato", serif;
+}
+
+.col-reverse {
+  @media (max-width: 767px) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+
+.gap-1{
+  gap: 8px;
+}
+
+.gap-2{
+  gap: 10px;
+}
+
+.gap-3{
+  gap: 12px;
+}
+.gap-4{
+  gap: 16px;
+}
+
+.gap-5{
+  gap: 20px;
+}

@@ -1,0 +1,141 @@
+@import "./variables.scss";
+
+.mega-menu {
+  max-height: 75vh;
+  height: 100%;
+  width: 100%;
+  background: white;
+  .side-line {
+    border-right: 1px solid #cfcfcf;
+
+    ul {
+      li {
+        list-style: none;
+        padding: 10px;
+
+        &:hover:not(:first-child) {
+          background-color: #f5f5f5;
+          border-radius: 8px;
+        }
+
+        a {
+          color: #212529;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .active-link{
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  .see-all-rugs,.top-sellers,.new-arrivals,.shop-by-size,.shop-by-shape,.shop-by-color,.shop-by-room,.shop-accessories,.shop-by-color,.shop-by-shape,.all-modern-rugs,.trendy-rugs{
+    padding: 1rem;
+    .bars{
+      padding-bottom: 1.3rem;
+      a{
+        text-decoration: none;
+      }
+    }
+    .all-rugs-points{
+      gap: 30px;
+      @media(max-width:1400px){
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      @media(max-width:992px){
+        gap: 20px;
+      }
+      .rugs-container{
+       @media(max-width:1024px){
+        max-width: 170px;
+       }
+       @media(max-width:992px){
+        max-width: 165px;
+       }
+        p{
+          padding-top: .7rem;
+        }
+        .image-wrapper{
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    @media(max-width:767px){
+      position: fixed;
+      top: 10%;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+  .show-component{
+    @media(max-width:767px){
+      display: none;
+    }
+  }
+  .top-sellers{
+    .top-seller-points{
+      gap: 30px;
+      @media(max-width:1400px){
+        gap: 15px;
+      }
+      @media(max-width:992px){
+        gap: 20px;
+      }
+      .seller-points{
+        max-height: 170px;
+        @media(max-width:1024px){
+         max-width: 170px;
+       }
+       @media(max-width:992px){
+        max-width: 165px;
+       }
+        p{
+          padding-top: .7rem;
+        }
+        .image-wrapper{
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mega-menu-wrapper{
+  background: rgb(45, 42, 42,.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: calc(12% + 0px);
+  left: 0;
+  z-index: 99;
+  @media(max-width:767px){
+    position: relative;
+    top: 0;
+  }
+}
+
+.desktop-link{
+  @media(max-width:767px){
+    display: none;
+  }
+}
+
+.d-none{
+  display: none !important;
+}
+
+ul{
+  padding: 0;
+  li{
+    list-style: none;
+    a{
+      text-decoration: none;
+    }
+  }
+}
