@@ -1,0 +1,44 @@
+.form-data{
+    position: fixed;
+    z-index: 999999;
+    background: $white;
+    max-width: 550px;
+    max-height: auto;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .cross-button{
+      background: $light-200;
+      width: 30px;
+      height: 30px;
+      padding: 1px 3px;
+      border-radius: 32px;
+      margin: auto;
+      float: inline-end;
+    }
+    .form_input{
+      label{
+        margin-bottom: 10px;
+      }
+     input,textarea{
+      border: 1px solid #cfcfcf;
+      border-radius: 4px;
+      padding: .5rem 1rem;
+      margin-bottom: 10px;
+      outline: none;
+     } 
+     textarea{
+      max-height: 150px;
+      height: 150px;
+     }
+    }
+    .button-wrapper{
+      button{
+        background: $dark-400;
+        color: $white;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+      }
+    }
+  }
